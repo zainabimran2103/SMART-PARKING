@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 Smart Parking System</h1>
+
+<div class="controls">
+  <input id="vehicleId" placeholder="Vehicle ID">
+  <select id="zone">
+    <option value="A">Zone A</option>
+    <option value="B">Zone B</option>
+  </select>
+  <button onclick="openPopup()">Create Request</button>
+  <button onclick="rollback()">Rollback</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vehicle</th>
+      <th>Zone</th>
+      <th>Slot</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-box">
+    <h3>Select Slot</h3>
+    <div id="grid" class="grid"></div>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/history.js"></script>
+<script src="js/table.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
