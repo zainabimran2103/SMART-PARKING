@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const select = document.getElementById("parkingSelect");
   const output = document.getElementById("output");
-
+//dgffgfghfghfg
   function render() {
     select.innerHTML = "";
     system.requests.forEach(r => {
